@@ -1,0 +1,102 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<div class="registration-container">
+    <h2>Register First-Time Visitor</h2>
+    <form class="">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+        
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email address" required>
+        
+        <label for="phone">Phone:</label>
+        <input type="tel" id="phone" name="phone" placeholder="Enter your phone number">
+        
+        <label for="interests">Interests:</label>
+        <textarea id="interests" name="interests" placeholder="Enter your interests or reasons for visiting"></textarea>
+        
+        <label for="follow-up">Preferred Follow-Up Method:</label>
+        <select id="follow-up" name="follow-up">
+            <option value="email">Email</option>
+            <option value="phone">Phone</option>
+            <option value="in-person">In-person</option>
+        </select>
+        
+        <label for="assigned-member">Assign to Member:</label>
+        <select id="assigned-member" name="assigned-member">
+            <option value="member1">John Doe</option>
+            <option value="member2">Jane Smith</option>
+            <!-- Add more member options as needed -->
+        </select>
+        
+        <button class="btn" type="submit">Register</button>
+    </form>
+</div>
+{% endblock %}
+
+
+
+<label class="col-sm-2 control-label">Focused</label>
+<div class="col-sm-10">
+   <input class="form-control" id="focusedInput" type="text"
+      value="This is focused...">
+</div>
+</div>
+<div class="form-group">
+<label for="inputPassword" class="col-sm-2 control-label">
+Disabled
+</label>
+<div class="col-sm-10">
+   <input class="form-control" id="disabledInput" type="text"
+      placeholder="Disabled input here..." disabled>
+</div>
+</div>
+<fieldset disabled>
+<div class="form-group">
+   <label for="disabledTextInput"  class="col-sm-2 control-label">
+      Disabled input (Fieldset disabled)
+   </label>
+   <div class="col-sm-10">
+      <input type="text" id="disabledTextInput" class="form-control"
+         placeholder="Disabled input">
+   </div>
+</div>
+<div class="form-group">
+   <label for="disabledSelect"  class="col-sm-2 control-label">
+      Disabled select menu (Fieldset disabled)
+   </label>
+   <div class="col-sm-10">
+      <select id="disabledSelect" class="form-control">
+         <option>Disabled select</option>
+      </select>
+   </div>
+</div>
+</fieldset>
+<div class="form-group has-success">
+<label class="col-sm-2 control-label" for="inputSuccess">
+   Input with success
+</label>
+<div class="col-sm-10">
+   <input type="text" class="form-control" id="inputSuccess">
+</div>
+</div>
+<div class="form-group has-warning">
+<label class="col-sm-2 control-label" for="inputWarning">
+   Input with warning
+</label>
+<div class="col-sm-10">
+   <input type="text" class="form-control" id="inputWarning">
+</div>
+</div>
+<div class="form-group has-error">
+<label class="col-sm-2 control-label" for="inputError">
+   Input with error
+</label>
+<div class="col-sm-10">
+   <input type="text" class="form-control" id="inputError">
+</div>
+</div>
+
+

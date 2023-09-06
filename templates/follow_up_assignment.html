@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <div class="follow-up-assignment-container">
+        <h2>Assign Follow-Up</h2>
+        <form class="follow-up-form">
+            <label for="visitor">Select Visitor:</label>
+            <select id="visitor" name="visitor">
+                <option value="visitor1">John Doe</option>
+                <option value="visitor2">Jane Smith</option>
+                <!-- Add more visitor options as needed -->
+            </select>
+            
+            <label for="assigned-member">Assign to Member:</label>
+            <select id="assigned-member" name="assigned-member">
+                <option value="member1">John Doe</option>
+                <option value="member2">Jane Smith</option>
+                <!-- Add more member options as needed -->
+            </select>
+            
+            <button class="btn" type="submit">Assign</button>
+        </form>
+    </div>
+{% endblock %}
+

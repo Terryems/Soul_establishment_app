@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <div class="follow-up-tracking-container">
+        <h2>Follow-Up Tracking</h2>
+        <table class="follow-up-table">
+            <thead>
+                <tr>
+                    <th>Visitor Name</th>
+                    <th>Assigned Member</th>
+                    <th>Status</th>
+                    <th>Notes</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>John Doe</td>
+                    <td>Jane Smith</td>
+                    <td>Contacted</td>
+                    <td>Interested in joining a home cell</td>
+		    <td>Interested in joining service unit</td>
+                </tr>
+                <!-- Add more rows as needed -->
+            </tbody>
+        </table>
+    </div>
+{% endblock %}
